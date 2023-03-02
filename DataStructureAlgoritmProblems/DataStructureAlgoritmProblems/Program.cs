@@ -12,10 +12,10 @@ namespace DataStructureAlgoritmProblems
             {
                 Console.WriteLine("\nSelect One Option : \n" +
                 "1. Binary Search Word From Word List\n" +
-                "2. End");
-                Console.Write("Please Select One Option: ");
+                "2. Insertion Sort\n" +
+                "3. Bubble Sort\n" +
+                "4. End\n");
                 int option = Convert.ToInt32(Console.ReadLine());
-
                 switch (option)
                 {
                     case 1:
@@ -23,10 +23,14 @@ namespace DataStructureAlgoritmProblems
                         word.Search();
                         break;
                     case 2:
+                        Insertion_Sort insertionSort = new Insertion_Sort();
+                        insertionSort.InsertionSort();
+                        break;
+                    case 3:
                         Console.WriteLine("\nThankYou..");
                         break;
                 }
-                if (option == 2)
+                if (option == 4)
                     break;
             }
         }
