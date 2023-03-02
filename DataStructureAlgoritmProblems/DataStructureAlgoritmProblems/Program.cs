@@ -31,6 +31,10 @@ namespace DataStructureAlgoritmProblems
                         BubbleSorting bubbleSort = new BubbleSorting();
                         bubbleSort.BubbleSort();
                         break;
+                    case 4:
+                        Anagram anagram = new Anagram();
+                        anagram.CheckAnagram();
+                        break;
                     case 5:
                         Console.WriteLine("\nThankYou..");
                         break;
