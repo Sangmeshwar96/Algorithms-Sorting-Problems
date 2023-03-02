@@ -14,7 +14,8 @@ namespace DataStructureAlgoritmProblems
                 "1. Binary Search Word From Word List\n" +
                 "2. Insertion Sort\n" +
                 "3. Bubble Sort\n" +
-                "4. End\n");
+                "4. Anagram\n" +
+                "5. End\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -27,6 +28,10 @@ namespace DataStructureAlgoritmProblems
                         insertionSort.InsertionSort();
                         break;
                     case 3:
+                        BubbleSorting bubbleSort = new BubbleSorting();
+                        bubbleSort.BubbleSort();
+                        break;
+                    case 5:
                         Console.WriteLine("\nThankYou..");
                         break;
                 }
